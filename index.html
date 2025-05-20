@@ -3,33 +3,67 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Website</title>
-  <link rel="stylesheet" href="css/styles.css" />
+  <title>index</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <header>
-    <nav class="navbar">
-      <div class="logo">Your Name</div>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="biography.html">About Me</a></li>
-        <li><a href="research.html">Research</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="games.html">Games</a></li>
-        <li><a href="contact.html">Contact</a></li>
+<body class="bg-gray-100 text-gray-900 font-sans">
+
+  <!-- NAVBAR -->
+  <header class="bg-gray-900 text-white sticky top-0 z-50 shadow-md">
+    <nav class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="text-xl font-bold tracking-wide">[\|/]</div>
+      <ul class="flex gap-6 text-sm sm:text-base">
+        <li><a href="index.html" class="hover:text-blue-400 transition">Home</a></li>
+        <li><a href="biography.html" class="hover:text-blue-400 transition">Biography</a></li>
+        <li><a href="research.html" class="hover:text-blue-400 transition">Research</a></li>
+        <li><a href="blog.html" class="hover:text-blue-400 transition">Blog</a></li>
+        <li><a href="games.html" class="hover:text-blue-400 transition">Games</a></li>
+        <li><a href="contact.html" class="hover:text-blue-400 transition">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <section class="intro">
-      <h1>Welcome to My Personal & Professional Website</h1>
-      <p>This is a central hub for everything I do—research, writing, puzzles, and more. Use the nav above to explore.</p>
+  <!-- MAIN CONTENT -->
+  <main class="max-w-4xl mx-auto px-6 py-16">
+    <section class="text-center">
+      <h1 class="text-4xl sm:text-5xl font-bold mb-4">Welcome to Tian Feng</h1>
+      <p class="text-lg text-gray-600">
+        My previous work, some musings, and other random garbage.
+      </p>
+    </section>
+
+    <section class="mt-16 grid gap-8 sm:grid-cols-2">
+      <a href="biography.html" class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition block text-center">
+        <h2 class="text-xl font-semibold mb-2">Biography</h2>
+        <p class="text-sm text-gray-600">Who I am, where I’ve been, and what I care about.</p>
+      </a>
+
+      <a href="research.html" class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition block text-center">
+        <h2 class="text-xl font-semibold mb-2">Research</h2>
+        <p class="text-sm text-gray-600">My areas of study, selected publications, and interests.</p>
+      </a>
+
+      <a href="blog.html" class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition block text-center">
+        <h2 class="text-xl font-semibold mb-2">Blog</h2>
+        <p class="text-sm text-gray-600">Occasional thoughts on science, code, life, and puzzles.</p>
+      </a>
+
+      <a href="games.html" class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition block text-center">
+        <h2 class="text-xl font-semibold mb-2">Games</h2>
+        <p class="text-sm text-gray-600">Interactive puzzles and word games I’ve created.</p>
+      </a>
+
+      <a href="contact.html" class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition block text-center sm:col-span-2">
+        <h2 class="text-xl font-semibold mb-2">Contact</h2>
+        <p class="text-sm text-gray-600">Get in touch via email or find me online.</p>
+      </a>
     </section>
   </main>
 
-  <footer>
-    <p>© Yutian Feng, 2025</p>
+  <!-- FOOTER -->
+  <footer class="bg-gray-200 text-center text-sm text-gray-600 py-6">
+    © 2025 Yutian Feng — Tailwind
   </footer>
+
 </body>
 </html>
